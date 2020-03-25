@@ -9,18 +9,18 @@ public class Money {
         this.currency = currency;
     }
 
-    public Money times(int amount) {
-        return null;
+    public Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
     public String currency() {
         return currency;
     }
 
     public static Money dollar(int amount) {
-        return new Dollar(amount, "USD");
+        return new Money(amount, "USD");
     }
     public static Money franc(int amount) {
-        return new Franc(amount, "CHF");
+        return new Money(amount, "CHF");
     }
 
     public boolean equals(Object object) {
