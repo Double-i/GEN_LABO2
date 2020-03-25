@@ -13,4 +13,7 @@ public class Sum implements Expression {
                 to).amount;
         return new Money(amount, to);
     }
+    public Expression plus(Expression addend) {
+        return null;
+    }
 }
