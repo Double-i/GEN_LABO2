@@ -1,6 +1,6 @@
 package main;
 
-public class Money {
+public class Money implements Expression{
     protected int amount;
     protected String currency;
 
